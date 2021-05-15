@@ -4,10 +4,8 @@ const ToDoItem = (props) => {
   const changeHandler = () => {};
 
   return (
-    <div onClick={changeHandler}>
-      <li style={{ textDecoration: isClicked ? "line-through" : "none" }}>
-        {props.text}
-      </li>
+    <div onClick={props.onChecked}>
+      <li>{props.text}</li>
     </div>
   );
 };
