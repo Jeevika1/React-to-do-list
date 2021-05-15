@@ -4,7 +4,11 @@ const ToDoItem = (props) => {
   const changeHandler = () => {};
 
   return (
-    <div onClick={props.onChecked}>
+    <div
+      onClick={() => {
+        props.onChecked(props.id);
+      }}
+    >
       <li>{props.text}</li>
     </div>
   );
