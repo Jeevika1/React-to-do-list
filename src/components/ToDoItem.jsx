@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 
 const ToDoItem = (props) => {
-  const [isClicked, setIsClicked] = useState(false);
-
-  const changeHandler = () => {
-    setIsClicked((prevValue) => {
-      return !prevValue;
-    });
-  };
+  const changeHandler = () => {};
 
   return (
     <div onClick={changeHandler}>
